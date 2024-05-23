@@ -42,17 +42,16 @@ class DateServiceTest {
         );
     }
 
-    @Order(1)
-    @ParameterizedTest
-    @MethodSource("getDateMergedWithTimeProvideValidParams")
+    @Test
     @DisplayName("getDateMergedWithTimeValid valid parameters")
     @Tag("Valid")
-    public void getDateMergedWithTimeValid(String time, Date noTimeDate, Date expectedDate) {
+    public void getDateMergedWithTimeValid() {
         //act
-        Date date = dateService.getDateMergedWithTime(time, noTimeDate);
+        Date date = dateService.getDateMergedWithTime("8:00",
+                new GregorianCalendar(2024, Calendar.MARCH, 31).getTime());
 
         // assert
-        assertEquals(expectedDate, date);
+        assertEquals(new GregorianCalendar(2024, Calendar.MARCH, 31, 8, 0).getTime(), date);
     }
 
     @Order(2)

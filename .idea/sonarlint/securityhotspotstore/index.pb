@@ -13,3 +13,7 @@ k
 Ksrc/test/java/tasks/services/TasksServiceIntegrateArrayTaskListAndTask.java,c/5/c530cd07728806525d64b3dbb0c47cdd2eefcd00
 t
 Dsrc/test/java/tasks/services/TasksServiceIntegrateArrayTaskList.java,c/b/cbff39c09f510a8b178e0631ed79483feda1a664
+\
+,src/main/java/tasks/model/ArrayTaskList.java,f/7/f77a2442ed82eb8b7386f5c9a49162f894ad8a61
+a
+1src/test/java/tasks/services/DateServiceTest.java,e/b/eb67f05314178cc6b3a1e4f981a808f271e00c26
